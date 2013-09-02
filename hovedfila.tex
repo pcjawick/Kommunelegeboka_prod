@@ -1,0 +1,48 @@
+\documentclass[a4paper]{memoir}
+
+%the packages
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[table]{xcolor}
+\usepackage{amssymb}
+\usepackage{titlesec}
+\usepackage{afterpage}
+\usepackage{hyperref}
+
+%the layout
+
+\settrimmedsize{297mm}{210mm}{*}
+\setlength{\trimtop}{0pt}
+\setlength{\trimedge}{\stockwidth}
+\addtolength{\trimedge}{-\paperwidth}
+\settypeblocksize{634pt}{448.13pt}{*}
+\setulmargins{4cm}{*}{*}
+\setlrmargins{*}{*}{1.5}
+\setmarginnotes{17pt}{51pt}{\onelineskip}
+\setheadfoot{\onelineskip}{2\onelineskip}
+\setheaderspaces{*}{2\onelineskip}{*}
+\checkandfixthelayout
+
+\author{Pål Ager-Wick }
+
+\title {Kommunelegeboka \\* en liten bok om samfunnsmedisin \\* Versjon 0.1} 
+\date{8. August 2013}
+
+\begin{document}
+
+\renewcommand{\chaptername}{Del}
+\renewcommand{\tablename}{Liste:}
+%\renewcommand{\thesection}
+
+\renewcommand{\bibname}{Kilder:}
+\renewcommand{\contentsname}{Innhold:}
+\renewcommand{\listfigurename}{Oversikt over bilder:}
+
+%tittelsidestart
+\input{./tittel.tex}
+  
+
+%slutt på tittelsiden
+\tableofcontents
+
+\end{document}
